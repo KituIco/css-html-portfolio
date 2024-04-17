@@ -1,0 +1,239 @@
+.skills {
+  background-color: #FF8181;
+  background-image: url('../../assets/media/BG.png');
+  background-size: cover;
+  width: 100%;
+  min-height: 780px;
+  padding: 80px 0px 40px;
+  z-index: 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 1120px) {
+  .skills .content {
+    margin: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .skills .content {
+    margin: 0px 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .content {
+    margin: 0px 20px;
+  }
+}
+
+.skills  h1 {
+  font-family: 'Lexend';
+  font-size: 48px;
+  color: #FFF;
+  text-shadow: 2px 2px #FF0000;
+  font-weight: 900;
+  margin: 0px auto -10px;
+}
+
+.skills .categories {
+  width:100%;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.skills h4 {
+  font-family: 'Quicksand';
+  font-size: 15px;
+  font-weight: 500;
+  color: #FFF;
+  text-shadow: 0.5px 0.5px #FF0000;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.skills h2 {
+  font-family: 'Lexend-Light';
+  font-size: 28px;
+  color: #FFF;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills .subheader {
+    max-width: 400px;
+  } 
+}
+
+.categories .category {
+  padding: 36px 0px;
+  margin: 0px;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid #FFF;
+  width: 100%;
+  cursor: pointer;
+  transition: all 1s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.category h2 {
+  padding-left: 14px;
+  font-family: 'Lexend-Light';
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+@media only screen and (max-width: 768px) {
+  .category h2 {
+    font-size: 24px;
+  }
+}
+
+.category span {
+  font-size: 12px;
+  font-family: 'NotoSans';
+  font-weight: 100;
+}
+
+.categories .category:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+
+.categories .details {
+  width: 46%;
+  height: 520px;
+  border-radius: 50px;
+  position: absolute;
+  opacity: 0;
+  left: 52%;
+  top: -95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .categories .details {
+    margin: 0px 0px;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    background-color: #FEE7D6;
+    height: 0px;
+    transition: all 0.5s ease;
+  }
+}
+
+.category:hover + .details.language, .details.language:hover {
+  background-color: #FEE7D6;
+  top: -240px;
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+.category:hover + .details.library, .details.library:hover {
+  background-color: #FEE7D6;
+  top: -140px;
+  opacity: 1;
+  transition:all 1s ease;
+  z-index: 2;
+}
+
+.category:hover + .details.platform, details.platform:hover {
+  background-color: #FEE7D6;
+  top: -50px;
+  opacity: 1;
+  transition:all 1s ease;
+  z-index: 2;
+}
+
+.category:hover + .details.design, .details.design:hover {
+  background-color: #FEE7D6;
+  top: 40px;
+  opacity: 1;
+  transition:all 1s ease;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .category:hover + .details.language {
+    top: 0px;
+    height: 520px;
+    transition: height 1s ease, opacity 1.5s ease-in;
+  }
+  
+  .category:hover + .details.library {
+    top: 0px;
+    height: 520px;
+    transition: height 1s ease, opacity 1.5s ease-in;
+  }
+  
+  .category:hover + .details.platform {
+    top: 0px;
+    height: 490px;
+    transition: height 1s ease, opacity 1.5s ease-in;
+  }
+
+  .category:hover + .details.design {
+    top: 0px;
+    height: 430px;
+    transition: height 1s ease, opacity 1.5s ease-in;
+  }
+}
+
+.categories .text {
+  margin: 0px 0px;
+  padding-right: 40px;
+  width: 65%;
+  align-self: center;
+}
+
+.categories .text h4 {
+  margin: 16px 0px 2px;
+  font-family: 'NotoSans';
+  font-size: 15px;
+  font-weight: 700;
+  color: #692A2A;
+  text-shadow: 0.5px 0.5px #FFF;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+  
+.categories .subtext {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px; 
+}
+
+.categories .subtext h5 {
+  margin: 4px 0px;
+  font-size: 13px;
+  font-family: 'Quicksand';
+  text-shadow: 0.5px 0.5px rgba(255, 0, 0, 0.2);
+}
+
+.categories .subtext .logoContainer {
+  width: 30px;
+  height: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.categories .subtext  img {
+  opacity: 0.9;
+  filter: 
+    brightness(60%) 
+    contrast(1000%)
+    saturate(0%)
+    drop-shadow(1px 1px 0px rgba(255, 0, 0, 0.3));
+}

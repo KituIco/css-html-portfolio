@@ -1,0 +1,127 @@
+.aboutme {
+  background: #FEE7D6;
+  width: 100%;
+  min-height: 800px;
+  padding: 80px 0px 20px;
+  position: relative;
+  z-index: 0;
+}
+
+@media only screen and (min-width: 1120px) {
+  .aboutme .content {
+    margin: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .aboutme .content {
+    margin: 0px 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutme .content {
+    margin: 0px 20px;
+  }
+}
+
+.aboutme h1 {
+  font-family: 'Lexend';
+  font-size: 48px;
+  color: #692A2A;
+  font-weight: 900;
+  margin: 0px auto -10px;
+  text-shadow: 2px 2px rgb(188, 143, 114);
+}
+
+
+@media only screen and (min-width: 920px) {
+  .aboutme .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .aboutme .row .column {
+    max-width: 400px;
+  }
+}
+
+.aboutme .row .column img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.aboutme .subheader {
+  @media only screen and (min-width: 920px) {
+    max-width: 400px;
+  }
+} 
+
+.aboutme h2{
+  font-family: 'NotoSans';
+  font-size: 28px;
+  color: #692A2A;
+}
+
+.aboutme h3{
+  font-family: 'Quicksand-Medium';
+  font-size: 18px;
+  line-height: 26px;
+  color: #692A2A;
+  margin: 30px 0px -10px
+}
+
+.aboutme h4{
+  font-family: 'Quicksand-Light';
+  font-size: 15px;
+  color: #692A2A;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.aboutme .button {
+  font-family: 'Lexend';
+  text-decoration:none;
+  color: #692A2A;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 100;
+  font-size: 12px;
+  display: block;
+  max-width: 222px;
+  margin-bottom: 60px;
+}
+
+.aboutme .button .circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #692A2A;
+  border-radius: 14px;
+  transition:all 0.5s ease;
+}
+
+.aboutme .button .label {
+  position: relative;
+  top: -22px;
+  left: 50px;
+  font-weight: 600;
+  transition:all 0.5s ease;
+}
+
+.aboutme .button:hover > .circle {
+  width: 220px;
+  height: 40px;
+  border-radius: 22px;
+  transition:all 0.5s ease;
+}
+
+.aboutme .button:hover > .label {
+  top: -30px;
+  left: 46px;
+  font-weight: 100;
+  transition:all 0.5s ease;
+}
+  

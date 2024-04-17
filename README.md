@@ -1,1 +1,1 @@
-Created a simple portfolio with HTML only.
+Created a simple portfolio with HTML and CSS only.

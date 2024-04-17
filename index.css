@@ -1,0 +1,224 @@
+.cover {
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cover {
+    width: 100%;
+    min-height: 620px;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .cover {
+    width: 100%;
+    min-height: 1080px; 
+  }
+ 
+}
+
+@media only screen and (max-width: 512px) {
+  .cover {
+    width: 100%;
+    min-height: 980px; 
+  }
+}
+
+.cover video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  background-color: #FF8181;
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg);  
+}
+
+@media only screen and (min-width: 1366px) {
+  .cover video {
+    border-top-right-radius: 45px;
+  }
+}
+
+.cover .caption {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .cover .caption {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 100px 0px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cover .caption {
+    margin: 30px 20px;
+  }
+}
+
+.cover .caption .text {
+  margin: 30px;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cover .caption .text {
+    max-width: 360px;
+    margin: 0px;
+  }
+}
+
+.caption h3 {
+  font-family: 'Lexend';
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #FFF;
+  font-weight: 100;
+  font-size: 12px;
+  margin: 40px 0px 52px;
+}
+
+@media only screen and (max-width: 768px) {
+  .caption h3 {
+    margin: 40px 0px;
+  }
+}
+
+.caption h1 {
+  font-family: 'NotoSans-Medium';
+  font-size: 74px;
+  color: #FFF;
+  font-weight: 900;
+  margin: 10px -8px;
+  line-height: 64px;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+@media only screen and (max-width: 1028px) {
+  .caption h1 {
+    font-size: 64px;
+    line-height: 54px;
+    padding: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .caption h1 {
+    padding: 0px;
+  }
+}
+
+h1 .highlight {
+  font-family: 'Bathilda';
+  line-height: 0px;
+  color: rgba(105, 42, 42, 0.7);
+  letter-spacing: -2px;
+  font-weight: 100;
+  font-variant: normal;
+  margin-bottom: -20px;
+  position:relative;
+  top: -110px;
+  left: 60px;
+}
+
+@media only screen and (max-width: 1028px) {
+  h1 .highlight {
+    top: -90px;
+    left: 40px;
+  }
+}
+
+h1 .highlight  .hspace {
+  font-size: 30px;
+}
+
+.caption h2 {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  font-weight: 100;
+  color: #FFF;
+  max-width: 360px;
+  margin-top: -30px;
+}
+
+@media only screen and (max-width: 512px) {
+  .caption h2 {
+    font-size: 16px; 
+  }
+}
+
+.caption h2 .highlight {
+  color: #692A2A;
+  font-weight: 600;
+}
+
+.caption .socials {
+  margin-top: 60px;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  font-size: large;
+  color: #FFF;
+}
+
+@media only screen and (max-width: 512px) {
+  .caption .socials {
+    margin-top: 30px;
+  }
+}
+
+.caption .socials a {
+  color: inherit;
+}
+
+.caption .socials a:hover {
+  font-size: xx-large;
+  text-shadow: 2px 2px 8px #000;
+  margin-top: -5px;
+}
+
+.caption .socials #facebook:hover {
+  color:#316FF6;
+}
+.caption .socials #linkedin:hover {
+  color:#0077b5;
+}
+.caption .socials #github:hover {
+  color:#2b3137;
+}
+.caption .socials #whatsapp:hover {
+  color:#075e54;
+}
+.caption .socials #youtube:hover {
+  color:#CD201F;
+}
+
+.caption img {
+    height: 680px;
+    margin: 0px 80px 0px -80px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .caption img {
+    height: 600px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .caption img {
+    height: 560px;
+    margin: 0px;
+  }
+}
