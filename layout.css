@@ -2,19 +2,6 @@
 
 body {
   margin: 0px;
-
-  .footer {
-    padding: 40px 0px;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-size: 16px;
-    line-height: 30px;
-
-    .light {
-      font-size: 14px;
-      color: rgba(0,0,0,0.5)
-    }
-  }
 }
 
 body .mainBG {
@@ -36,12 +23,6 @@ header {
   transition: all 0.5s ease 0.5s;
 }
 
-@media only screen and (max-width: 1366px) {
-  header {
-    z-index: 3;
-  }
-}
-
 @media only screen and (min-width: 1366px) {
   .header {
     display: flex;
@@ -49,6 +30,12 @@ header {
     margin: auto;
     justify-content: space-between;
     z-index: 4;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  header {
+    z-index: 3;
   }
 }
 
@@ -67,7 +54,7 @@ header {
 }
 
 @media only screen and (min-width: 1366px) {
-  .header{
+  .header {
     display: flex;
     width: 1280px;
     margin: auto;
@@ -133,12 +120,6 @@ header {
 
 /* MENU BUTTON */
 
-.menu-button {
-  position: relative;
-  top: 0px;
-  left: 2px;
-}
-
 #menu-check {
   opacity: 0;
   width: calc(100vw - 1230px);
@@ -147,6 +128,12 @@ header {
   top: 130px;
   right: 0px;
   z-index: 5;
+}
+
+.menu-button {
+  position: relative;
+  top: 0px;
+  left: 2px;
 }
 
 .menu-button i {
@@ -167,22 +154,22 @@ header {
   align-items: center;
 }
 
-input:checked + header {
+#menu-check:checked + header {
   z-index: 3;
   transition: all 0s;
 }
 
 
-input:checked + * #k2logo {
+#menu-check:checked + * #k2logo {
   background-color: #FFF;
   transition: all 1s ease;
 }
 
-input:checked + * .menu-button i {
+#menu-check:checked + * .menu-button i {
   color: #FFF;
 }
 
-input:checked + * .menu-container {
+#menu-check:checked + * .menu-container {
   margin: 6px 0px;
   color:#FFF;
 }
@@ -213,11 +200,11 @@ input:checked + * .menu-container {
     background: #FFF;
   }
 
-  input:checked + * .menu-button i {
+  #menu-check:checked + * .menu-button i {
     color: #BC8F72;
   }
 
-  input:checked + * .menu-container {
+  #menu-check:checked + * .menu-container {
     margin: 6px 8px;
     padding: 0 5vw;
   }
@@ -240,7 +227,7 @@ input:checked + * .menu-container {
   
 }
 
-input:checked + * .page {
+#menu-check:checked + * .page {
   top: 0;
 }
 
@@ -263,7 +250,7 @@ input:checked + * .page {
     margin: 0px 30px 40px;
   }
 
-  input:checked + * .page {
+  #menu-check:checked + * .page {
     top: 0;
     max-height: 100vh;
     transition: top 0.5s ease, max-height 0s;
@@ -370,31 +357,32 @@ input:checked + * .page {
   font-size: large;
   color: #FFF;
   margin: 100px 0px;
+}
 
-  a {
-    color: inherit;
-  }
-  a:hover {
-    font-size: xx-large;
-    text-shadow: 2px 2px 8px #000;
-    margin-top: -5px;
-  }
+.details .socials a {
+  color: inherit;
+}
 
-  #facebook:hover {
-    color:#316FF6;
-  }
-  #linkedin:hover {
-    color:#0077b5;
-  }
-  #github:hover {
-    color:#2b3137;
-  }
-  #whatsapp:hover {
-    color:#075e54;
-  }
-  #youtube:hover {
-    color:#CD201F;
-  }
+.details .socials a:hover {
+  font-size: xx-large;
+  text-shadow: 2px 2px 8px #000;
+  margin-top: -5px;
+}
+
+.details .socials #facebook:hover {
+  color:#316FF6;
+}
+.details .socials #linkedin:hover {
+  color:#0077b5;
+}
+.details .socials #github:hover {
+  color:#2b3137;
+}
+.details .socials #whatsapp:hover {
+  color:#075e54;
+}
+.details .socials #youtube:hover {
+  color:#CD201F;
 }
 
 @media only screen and (max-width: 512px) {
@@ -402,8 +390,6 @@ input:checked + * .page {
     margin-top: 30px;
   } 
 }
-
-
 
 
 /* MAIN SECTION */
